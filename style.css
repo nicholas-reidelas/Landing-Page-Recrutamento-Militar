@@ -1,5 +1,31 @@
 body {
     background-color: #62a9b3; /* cinza bem claro, elegante e suave */
     font-family: Arial, sans-serif;
-    padding: 20px;
+    padding: 10px;
+  }
+
+  .cabeçalho{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: beige;
+  }
+
+
+  .cabeçalho-menu{
+    display: flex;
+    gap: 30px;
+    color: beige;
+  }
+
+
+  .cabeçalho-menu-item{
+    font-family: "Montserrat", sans-serif;
+
+  }
+
+
+  .imagem-cabeçalho{
+    width: 70px;
   }
