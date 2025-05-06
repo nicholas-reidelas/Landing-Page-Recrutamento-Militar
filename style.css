@@ -25,7 +25,31 @@ body {
 
   }
 
+  .cabeçalho-menu-item:hover{
+    color: #0400ff;
+    text-decoration: none;
+  }
 
   .imagem-cabeçalho{
+    margin-right: 25px;
     width: 70px;
+  }
+
+  .cabeçalho-logo{
+    flex-wrap: nowrap;
+    display:flex
+  }
+
+
+  .formulario-meio{
+    text-align: center;
+  }
+
+  .fundo-bonito{
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 900px;;
   }
