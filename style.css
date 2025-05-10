@@ -1,4 +1,7 @@
-body {
+  
+  
+  
+  body {
     background-color: #62a9b3; /* cinza bem claro, elegante e suave */
     font-family: Arial, sans-serif;
     padding: 10px;
@@ -53,3 +56,30 @@ body {
     margin: 20px auto;
     max-width: 900px;;
   }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0; /* Remove o recuo da lista */
+  }
+  
+  .frase-aerea {
+    text-decoration: none;
+    color: rgb(109, 89, 193);
+    font-family: "Montserrat", sans-serif;
+  }
+  .frase-aerea:hover{
+    color: #0c00f8;
+  }
+
+  .concurso{
+    text-align: center;
+  }
+    
+
+
+  .fundo-bonito-forca-aerea{
+    background-color: rgb(255, 255, 255);
+    
+    
+  }
+
