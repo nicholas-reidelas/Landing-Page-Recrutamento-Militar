@@ -1,55 +1,161 @@
+* {
+  padding: 0px;
+  margin: 0;
+}
+
 body {
-    background-color: #62a9b3; /* cinza bem claro, elegante e suave */
-    font-family: Arial, sans-serif;
-    padding: 10px;
+  background-color: #62a9b3;
+  /* cinza bem claro, elegante e suave */
+  font-family: Arial, sans-serif;
+  padding: 0px;
+  margin: 0;
+
+  & li {
+    list-style-type: none;
+  }
+}
+
+.cabeçalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: beige;
+}
+
+
+.cabeçalho-menu {
+  display: flex;
+  gap: 30px;
+  color: beige;
+}
+
+
+.cabeçalho-menu-item {
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.cabeçalho-menu-item:hover {
+  color: #0400ff;
+  text-decoration: none;
+}
+
+.imagem-cabeçalho {
+  margin-right: 25px;
+  width: 70px;
+}
+
+.cabeçalho-logo {
+  flex-wrap: nowrap;
+  display: flex
+}
+
+
+.formulario-meio {
+  text-align: center;
+}
+
+.fundo-bonito {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.fundo-bonito-forca-aerea {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 900px;
+  min-height: 150px;
+  display: flex;
+  transition-duration: 2s;
+
+  & a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #3a4ad4;
+
+  }
+}
+
+.fundo-bonito-forca-aerea:hover {
+  & img {
+    transition-duration: 2s;
+    width: 450px;
   }
 
-  .cabeçalho{
-    display: flex; 
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    color: beige;
+  & a {
+    font-size: 20px;
+    transition-duration: 2s;
   }
+}
 
 
-  .cabeçalho-menu{
-    display: flex;
-    gap: 30px;
-    color: beige;
+.fundo-concurso {
+  background-color: #d3be63;
+}
+
+.titulo-curso {
+  text-align: center;
+
+}
+
+.titulo-profissao {
+  text-align: center;
+}
+
+.profissoes {
+  background-color: rgb(255, 255, 255);
+  max-height: 292px;
+
+  & p {
+    display: none;
   }
-
-
-  .cabeçalho-menu-item{
-    font-family: "Montserrat", sans-serif;
-
-  }
-
-  .cabeçalho-menu-item:hover{
-    color: #0400ff;
+  & a {
     text-decoration: none;
   }
+}
 
-  .imagem-cabeçalho{
-    margin-right: 25px;
-    width: 70px;
+.container-lista {
+  margin: auto;
+  max-width: 1160px;
+
+}
+
+.lista-profissoes {
+  display: flex;
+  flex: 1;
+
+  & li {
+    margin-right: 10px;
+
   }
 
-  .cabeçalho-logo{
-    flex-wrap: nowrap;
-    display:flex
+  & a {
+    margin-right: 10px;
+    display: block;
   }
 
 
-  .formulario-meio{
-    text-align: center;
-  }
+}
 
-  .fundo-bonito{
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 20px auto;
-    max-width: 900px;;
+.texto-sobe{
+  top:-32px
+}
+
+.profissoes:hover {
+  transition-duration: 2s;
+
+  & p {
+
+    display: block;
+
+
   }
+}
