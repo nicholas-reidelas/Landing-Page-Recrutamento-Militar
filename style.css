@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #62a9b3;
+  background-color: #556B2F;
   /* cinza bem claro, elegante e suave */
   font-family: Arial, sans-serif;
   padding: 0px;
@@ -22,7 +22,9 @@ body {
   justify-content: space-between;
   color: beige;
 }
-
+#bege{
+  color: beige;
+}
 
 .cabeçalho-menu {
   display: flex;
@@ -48,8 +50,10 @@ body {
 
 .cabeçalho-logo {
   flex-wrap: nowrap;
-  display: flex
+  display: flex;
+  text-decoration: none
 }
+
 
 
 .formulario-meio {
@@ -98,7 +102,7 @@ body {
 
 
 .fundo-concurso {
-  background-color: #d3be63;
+  background-color: #6B8E23;
 }
 
 .titulo-curso {
@@ -117,12 +121,15 @@ body {
   & p {
     display: none;
   }
+
   & a {
     text-decoration: none;
   }
 }
 
 .container-lista {
+  display: flex;
+  justify-content: space-between;
   margin: auto;
   max-width: 1160px;
 
@@ -131,6 +138,8 @@ body {
 .lista-profissoes {
   display: flex;
   flex: 1;
+
+
 
   & li {
     margin-right: 10px;
@@ -145,17 +154,97 @@ body {
 
 }
 
-.texto-sobe{
-  top:-32px
+.texto-sobe {
+  top: -32px
 }
 
 .profissoes:hover {
   transition-duration: 2s;
 
   & p {
-
     display: block;
-
-
   }
+}
+
+.sociais {
+  & .imagem2{
+    display: none;
+  }
+}
+
+.sociais:hover{
+  & .imagem1{
+    display:none
+  }
+  & .imagem2{
+    display: inline-block;
+  }
+}
+
+a.texto-profissao{
+  position: relative;
+  display: block;
+  width: 370px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2 ease;
+}
+
+.texto-profissao img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-texto{
+  position:absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background-color:white;
+  color: #0066aa;
+  padding: 20px;
+  transition: bottom 2s ease;
+}
+
+a.texto-profissao:hover .card-texto{
+  bottom: 0;
+  transition: bottom 0.3s ease;
+}
+
+.Titulo-card{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.Descricao-card{
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+}
+
+footer{
+  background-color: #4B5320;
+  margin-top: 20px;
+}
+
+#Copyright{
+  margin-top: 100px;
+}
+
+ 
+
+.footer-stilo{
+  display: flex;
+  justify-content: space-between;
+}
+
+#h41zz{
+  margin-bottom: 15px;
 }

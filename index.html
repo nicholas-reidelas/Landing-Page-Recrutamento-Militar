@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Recutamento Militar Brasileiro</title>
+    <script src="script.js"></script>
 </head>
 
-<body>
+<body onload="CarregarCards()">
     <header class="cabeçalho">
-        <div class="cabeçalho-logo">
-            <img class="imagem-cabeçalho" src="logodoexercito.png" alt="logo do exercito brasileiro">
-            <h1>Serviço<br> Militar</h1>
+        <div>
+            <a class="cabeçalho-logo" href="index.html"> <img class="imagem-cabeçalho" src="imagens/logodoexercito.png"
+                    alt="logo do exercito brasileiro">
+                <h1 id="bege">Serviço<br> Militar</h1>
+            </a>
         </div>
         <nav class="cabeçalho-menu">
             <a class="cabeçalho-menu-item">Forças Armadas </a>
@@ -73,117 +76,65 @@
                                 </option>
                             </select>
 
-                                <select name="especialidade">
-                                    <option> </option>
-                                    <option value="especialização">
-                                        Na Marinha</option>
-                                    <option value="especialização">
-                                        Na Aéronautica
-                                    </option>
-                                    <option value="especialização">
-                                        No Exército
-                                    </option>
-                                </select>
-                            </label>
-                        </form>
+                            <select id="select-legal" name="especialidade" onchange="CarregarCards()">
+                                <option value=""> </option>
+                                <option value="marinha">
+                                    Na Marinha</option>
+                                <option value="aeronautica">
+                                    Na Aéronautica
+                                </option>
+                                <option value="exercito">
+                                    No Exército
+                                </option>
+                            </select>
+
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="fundo-concurso">
+            <h2 class="titulo-curso">CONCURSOS EM DESTAQUE</h2>
+            <ul id="lista-cards">
+            </ul>
+        </section>
+        <section>
+            <h2 class="titulo-profissao">PROFISSÕES EM DESTAQUE</h2>
+            <div class="container-lista">
+
+                <a href="sites/profissão_fuzileiro.html" class="texto-profissao">
+                    <img src="imagens/foto-fuzileiro.jpg" alt="fuzileiro">
+
+                    <div class="card-texto">
+                        <div class="Titulo-card">Fuzileiro</div>
+                        <div class="Descricao-card">Vire um fuzileiro do Exercito Brasileiro </div>
                     </div>
-                </div>
-            </section>
-            <section class="fundo-concurso">
-                <h2 class="titulo-curso">CONCURSOS EM DESTAQUE</h2>
-                <ul>
-                    <li>
-                        <div class="fundo-bonito-forca-aerea">
-                            <img src="foto-forca-aerea.jpg" alt="foto-aerea"
-                                width="400px">
-                            <a
-                                href="formação_sargento_força_aerea.html">Concurso
-                                de
-                                Formação de Sargentos da Força Aérea</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="fundo-bonito-forca-aerea">
-                            <img src="foto-brigadeiro.jpg" alt="brigadeiro"
-                                width="400px">
-                            <a href="formação_brigadeiro_exercito.html">Concurso
-                                de
-                                Formação de Brigadeiros do Exército</a>
-                        </div>
+                </a>
 
-                    </li>
+                <a href="sites/profissão_socorrista.html" class="texto-profissao">
+                    <img src="imagens/foto-socorrista.jpg" alt="Socorrista">
 
-                    <li>
-                        <div class="fundo-bonito-forca-aerea">
-                            <img src="foto-marinha.jpg" alt="marinha"
-                                width="400px">
-                            <a href="formação_praça_marinha.html">Concurso de
-                                Formação de Praças da Marinha</a>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h2 class="titulo-profissao">PROFISSÕES EM DESTAQUE</h2>
-                <div class="container-lista">
-                    <ul class="lista-profissoes">
-                        <li>
-                            <div class="profissoes">
-                                <ul>
-                                    <li>
-                                        <div class="texto-profissao">
-                                            <img src="foto-fuzileiro.jpg"
-                                                alt="fuzileiro">
-                                            <a
-                                                href="profissão_fuzileiro.html">Fuzileiro</a>
-                                            <p>Vire um Fuzileiro do exercito
-                                                Brasileiro</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="profissoes">
-                                <ul>
-                                    <li>
-                                        <div class="texto-profissao">
-                                            <img src="foto-socorrista.jpg"
-                                                alt="Socorrista">
-                                            <a
-                                                href="profissão_socorrista.html">Saude-Socorrista</a>
-                                            <p>Vire Socorrista do exercito
-                                                Brasileiro</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="profissoes">
-                                <ul>
-                                    <li>
-                                        <div>
-                                            <img src="foto-policia-aerea.jpg"
-                                                alt="policia-aerea">
+                    <div class="card-texto">
+                        <div class="Titulo-card">Saude-Socorrista</div>
+                        <div class="Descricao-card">Vire um Socorrista do Exercito Brasileiro </div>
+                    </div>
+                </a>
 
-                                                <a
-                                                    href="profissão_policia_aerea.html">Policia
-                                                    aerea</a>
-                                                <p>Vire um Policial aereo do
-                                                    exercito Brasileiro</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </main>
+                <a href="sites/profissão_policia_aerea.html" class="texto-profissao">
+                    <img src="imagens/foto-policia-aerea.jpg" alt="policia-aerea">
 
-    <footer>
-        <div>
+                    <div class="card-texto">
+                        <div class="Titulo-card">Policia Aerea</div>
+                        <div class="Descricao-card">Vire um Policial Aereo do Exercito Brasileiro </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-stilo">
+        <div class="rodape-forca-armada">
             <h4>As Forças Armadas</h4>
             <ul>
                 <li>Missão e Organização</li>
@@ -192,28 +143,29 @@
                 <li>Academia da FA</li>
             </ul>
         </div>
-        <div>
-            <h4>Siga-nos nas redes sociais</h4>
+        <div class="rodape-rede-social">
+            <h4 id="h41zz">Siga-nos nas redes sociais<br> </h4>
+
+            <a href="sites/link-facebook.html" class="sociais">
+                <img src="imagens/logo-fc1.png" alt="facebook" width="50px" class="imagem1">
+                <img src="imagens/logo-inversofc1.png" alt="facebook-inverso" width="50px" class="imagem2">
+            </a>
+            <a href="sites/link-instagram.html" class="sociais">
+                <img src="imagens/logo-ig1.png" alt="instagram" width="50px" class="imagem1">
+                <img src="imagens/logo-inversoig1.png" alt="instagram-inverso" width="50px" class="imagem2">
+            </a>
+            <a href="sites/link-youtube.html" class="sociais">
+                <img src="imagens/logo-yt.png" alt="youtube" width="50px" class="imagem1">
+                <img src="imagens/logo-inversoyt1.png" alt="youtube-inverso" width="50px" class="imagem2">
+            </a>
+
+
         </div>
-        <h6>COPYRIGHT © Direção-Geral de Recursos da Defesa Nacional
-            2025</h6>
-    </footer>
-        <footer>
-            <div class="footer1">
-                <h4>As Forças Armadas</h4>
-                <ul>
-                    <li>Missão e Organização</li>
-                    <li>Escola Naval</li>
-                    <li>Academia Militar</li>
-                    <li>Academia da FA</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Siga-nos nas redes sociais</h4>
-            </div>
-            <h6>COPYRIGHT © Direção-Geral de Recursos da Defesa Nacional
+        <div>
+            <h6 id="Copyright">COPYRIGHT © Direção-Geral de Recursos da Defesa Nacional
                 2025</h6>
-        </footer>
+        </div>
+    </footer>
 
 </body>
 
